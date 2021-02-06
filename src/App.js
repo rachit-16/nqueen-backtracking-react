@@ -5,7 +5,7 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(2);
   const [result, setResult] = useState("");
   const [queenPos, setQueenPos] = useState([]);
   return (
@@ -34,6 +34,7 @@ function App() {
                 type="number"
                 min="2"
                 max="16"
+                value="2"
                 onChange={(v) => {
                   console.log(v.target.value);
                   setCount(v.target.value);

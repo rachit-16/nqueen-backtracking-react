@@ -4,7 +4,6 @@ import _ from "lodash";
 import "./chessboard.css";
 
 export const CheckerBoard = ({ size, queenPositions = [] }) => {
-  const [tempQueen, setTempQueen] = useState({});
   let checkerBoard = [];
   for (let i = 0; i <= size; i++) {
     let newRow = true;
